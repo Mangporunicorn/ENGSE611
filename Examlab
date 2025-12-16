@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examlab</title>
+</head>
+
+<body>
+    <form>
+        <h3>สมัคร</h3>
+        <p>ง่ายและเร็ว</p>
+
+        <label>ชื่อ:</label>
+        <input type="text" name="name">
+        <br><br>
+        <label>นามสกุล:</label>
+        <input type="text" name="lastname">
+        <label>หมายเลขโทรศัพท์มือถือหรืออีเมล</label>
+        <input type="number">
+        <input type="email">
+        <label>รหัสผ่านใหม่</label>
+        <input type="password">
+        <label>วันเกิด</label>
+        <select name="date">
+            <option>14</option>
+            <option>15</option>
+        </select>
+        <select>
+            <option>ส.ค</option>
+            <option>ก.ย</option>
+        </select>
+        <select>
+            <option>2020</option>
+            <option>2021</option>
+        </select>
+        <label>เพศ:</label>
+        <input type="radio" name="gender" value="male">ชาย
+        <input type="radio" name="gender" value="Famale">หญิง
+    <p>เมื่อคลิก สมัคร แสดงว่าคุณยอมรับข้อกำหนดนโยบายข้อมูลและนโยบายคุกกี้ของเรา คุณอาจได้รับการแจ้งเตือนทาง SMS จากเราและสามารถเลือกไม่รับได้ในภายหลัง</p>
+    <br><br>
+    <button type="submit">สมัคร</button>
+    </form>
+</body>
+</html>
