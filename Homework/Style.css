@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แนะนำตัว</title>
+
+    <style>
+        /* ===== Element selectors ===== */
+        body{
+            font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+            margin: 0;
+            line-height: 1.7;
+            background-color: #fff0f6; /* ชมพูอ่อน */
+            color: #4a2b36;
+        }
+
+        h1{
+            text-align: center;
+            font-weight: 800;
+            margin: 0;
+            padding: 18px 12px;
+            color: #b03060;
+        }
+
+        h2{
+            font-weight: 700;
+            margin-top: 0;
+            text-align: center;
+            color: #d63384;
+        }
+
+        a{
+            color: #d63384;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        /* ===== Header / Nav ===== */
+        header{
+            padding: 18px 14px 10px;
+            background: #ffd6e8;
+            border-bottom: 1px solid #f3a6c8;
+            text-align: center;
+        }
+
+        nav{
+            text-align: center;
+            padding: 10px 0;
+            background: #ffe3ef;
+        }
+
+        nav a{
+            margin: 0 12px;
+        }
+
+        /* ===== Main layout ===== */
+        main{
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 18px 14px 40px;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 12px auto;
+            border-radius: 16px;
+            border: 3px solid #f3a6c8;
+        }
+
+        section{
+            background: #ffffff;
+            border: 1px solid #f3a6c8;
+            border-radius: 16px;
+            padding: 16px 14px;
+            margin: 16px 0;
+        }
+
+        /* ===== Table ===== */
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td{
+            border: 1px solid #f3a6c8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th{
+            background-color: #ffb3d9;
+            color: #4a2b36;
+            font-weight: 800;
+        }
+
+        td{
+            background-color: #fff5fa;
+            color: #4a2b36;
+        }
+
+        /* ===== Form ===== */
+        form{
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        input, textarea{
+            width: 100%;
+            max-width: 520px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 12px;
+            border: 1px solid #f3a6c8;
+            background: #fff5fa;
+            color: #4a2b36;
+        }
+
+        textarea{
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        input[type="submit"]{
+            background: #ff85b3;
+            color: white;
+            font-weight: 800;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="submit"]:hover{
+            background: #d63384;
+        }
+
+        /* ===== Footer ===== */
+        footer{
+            text-align: center;
+            padding: 18px 14px;
+            background: #ffd6e8;
+            border-top: 1px solid #f3a6c8;
+        }
+
+        /* ===== Extra ===== */
+        .highlight{
+            color: #d63384;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ปริยากร ธารพรศรี</h1>
+        <p>เว็บไซต์แนะนำตัวเอง</p>
+    </header>
+
+    <nav>
+        <a href="#about">เกี่ยวกับฉัน</a>
+        <a href="#skills">ทักษะ</a>
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h2>About me</h2>
+            <p>
+                ชื่อเล่น <span class="highlight">แมงปอ</span>
+                I'm a cat lover, prefer ice-cream and <span class="highlight">PINK</span>
+            </p>
+
+            <img src="/pic/565217850_18364739770086027_7418338879920283970_n.jpg" alt="รูปโปรไฟล์">
+
+            <ul>
+                <li>Love Hello Kitty</li>
+                <li>Love horror and aesthetic things</li>
+            </ul>
+
+            <ol>
+                <li>เรียน</li>
+                <li>ฝึกฝน</li>
+            </ol>
+        </section>
+
+        <section id="skills">
+            <h2>ทักษะ</h2>
+            <table>
+                <tr>
+                    <th>ภาษา</th>
+                    <th>ระดับ</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>พื้นฐาน</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>พื้นฐาน</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>ติดต่อ</h2>
+            <form>
+                <input type="text" placeholder="ชื่อ">
+                <input type="email" placeholder="อีเมล">
+                <textarea placeholder="ข้อความ"></textarea>
+                <input type="submit" value="ส่ง">
+            </form>
+
+            <p>
+                <a href="https://www.facebook.com/porry.priyakon27" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com/portixparis/?hl=en" target="_blank">Instagram</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 เว็บไซต์แนะนำตัว</p>
+    </footer>
+
+</body>
+</html>
