@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Labcss1</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 40px;
+    }
+
+    h1{
+        margin-bottom: 30px;
+    }
+
+    .card-container{
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .card{
+        background-color: #ffffff;
+        width: 260px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+    }
+
+    .card h2{
+        margin-top: 0;
+    }
+
+    .card p{
+        color: #555;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>โจทย์ที่ 1 : Card Layout ด้วย Flexbox</h1>
+
+<div class="card-container">
+    <div class="card">
+        <h2>Card 1</h2>
+        <p>คำอธิบายเนื้อหาของการ์ดใบแรก</p>
+    </div>
+
+    <div class="card">
+        <h2>Card 2</h2>
+        <p>คำอธิบายเนื้อหาของการ์ดใบที่สอง</p>
+    </div>
+
+    <div class="card">
+        <h2>Card 3</h2>
+        <p>คำอธิบายเนื้อหาของการ์ดใบที่สาม</p>
+    </div>
+</div>
+
+</body>
+</html>
