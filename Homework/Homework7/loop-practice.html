@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Loop Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 40px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #00bcd4;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+    }
+    #outputBox {
+      margin: 20px auto;
+      padding: 20px;
+      width: 350px;
+      background-color: black;
+      color: #00ff90;
+      border-radius: 10px;
+      text-align: left;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Loop Practice</h1>
+  <button onclick="runLoop()">Run Code</button>
+
+  <div id="outputBox"></div>
+
+  <script>
+    function runLoop() {
+
+      let output = "";
+      let maxNumber = 20;
+
+      for (let i = 0; i <= maxNumber; i++) {
+
+        if (i % 2 === 0) {
+          output += i + " (คู่)<br>";
+          console.log(i + " (คู่)");
+        } else {
+          output += i + " (คี่)<br>";
+          console.log(i + " (คี่)");
+        }
+      }
+
+      output += "<hr>";
+
+      for (let i = 0; i <= 10; i += 2) {
+        output += "นับทีละ 2: " + i + "<br>";
+        console.log("นับทีละ 2:", i);
+      }
+
+      output += "<hr>";
+
+      for (let i = 10; i >= 0; i--) {
+        output += "ถอยหลัง: " + i + "<br>";
+        console.log("ถอยหลัง:", i);
+      }
+
+      document.getElementById("outputBox").innerHTML = output;
+    }
+  </script>
+
+</body>
+</html>
