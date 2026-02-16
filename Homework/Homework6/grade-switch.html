@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>การตรวจสอบเกรด (Switch Statement)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: orange;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #outputBox {
+      margin: 20px auto;
+      padding: 20px;
+      width: 300px;
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>การตรวจสอบเกรด (Switch Statement)</h1>
+  <button onclick="runGrade()">Run Code</button>
+
+  <div id="outputBox"></div>
+
+  <script>
+    function runGrade() {
+
+      let score = Math.floor(Math.random() * 101);
+      let grade = "";
+      let result = "";
+      let description = "";
+
+      if (score >= 80) {
+        grade = "A";
+      } else if (score >= 70) {
+        grade = "B";
+      } else if (score >= 60) {
+        grade = "C";
+      } else if (score >= 50) {
+        grade = "D";
+      } else {
+        grade = "F";
+      }
+
+      result = (score >= 50) ? "ผ่าน" : "ไม่ผ่าน";
+
+      switch (grade) {
+        case "A":
+          description = "ยอดเยี่ยมมาก!";
+          break;
+        case "B":
+          description = "ดีมาก รักษามาตรฐานไว้";
+          break;
+        case "C":
+          description = "ผ่านเกณฑ์ระดับดี";
+          break;
+        case "D":
+          description = "พอใช้ แต่ควรพัฒนาเพิ่ม";
+          break;
+        case "F":
+          description = "ต้องลงทะเบียนเรียนใหม่";
+          break;
+        default:
+          description = "ไม่มีข้อมูล";
+      }
+
+      document.getElementById("outputBox").innerHTML = `
+        คะแนนที่สุ่มได้: ${score} <br>
+        เกรด: ${grade} <br>
+        ผลสอบ: ${result} <br>
+        คำอธิบาย: ${description}
+      `;
+
+      console.log("คะแนน:", score);
+      console.log("เกรด:", grade);
+      console.log("ผลสอบ:", result);
+      console.log("คำอธิบาย:", description);
+    }
+  </script>
+
+</body>
+</html>
